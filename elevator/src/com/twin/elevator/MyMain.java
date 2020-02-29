@@ -1,20 +1,31 @@
 package com.twin.elevator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MyMain {
 
 	public static void main(String[] args) {
 		System.out.println("hello Romain!");
-		People p1 = new People(25);
-		System.out.println("age=" + p1.age);
-		People p2 = p1;
-		p2.age *= 2;
-		System.out.println("age=" + p1.age);
-		System.out.println("age=" + new People(10).age);
-		System.out.println(new People(10) + " " + p1 + " " + p2);
-		System.out.println(p2.toString());
-		p1.f(10);
-		p1.g(10);
-		People.g(45);
+		List<Person> people = new ArrayList<Person>();
+		for (int i = 0; i < 3; i++) {
+			Person person = new Person("joe" + "_" + (i + 1), 25 + 5 * i);
+			System.out.println(person);
+			people.add(person);
+		}
+		for (int i = 0; i < 2; i++) {
+			Person person = new Hero("mary" + "_" + (i + 1), 25 + 5 * i);
+			System.out.println(person);
+			people.add(person);
+		}
+		for (int t = 0; t < 10; t++) {
+			for (int i = 0; i < people.size(); i++) {
+				Person person = people.get(i);
+				person.move();
+				people.get(i).move();
+			}
+		}
+		System.out.println(people);
 	}
 
 }
