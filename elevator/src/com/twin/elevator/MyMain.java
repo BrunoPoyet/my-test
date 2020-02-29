@@ -2,7 +2,6 @@ package com.twin.elevator;
 
 public class MyMain {
 
-	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		System.out.println("hello Romain!");
 		People p1 = new People(25);
@@ -17,4 +16,5 @@ public class MyMain {
 		p1.g(10);
 		People.g(45);
 	}
+
 }
