@@ -10,7 +10,7 @@ public class People {
 
 	@Override
 	public String toString() {
-		return "People [age=" + age + "]";
+		return "Fabulous people [age=" + age + "]";
 	}
 	
 	public void f(int x) {
