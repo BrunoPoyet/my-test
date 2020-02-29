@@ -5,7 +5,7 @@ public class People {
 
 	public People(int age) {
 		super();
-		this.age = age + 10;
+		this.age = age + 15;
 	}
 
 	@Override
@@ -20,7 +20,4 @@ public class People {
 	public static void g(int x) {
 		System.out.println(100 + x);
 	}
-	
-	
-
 }
