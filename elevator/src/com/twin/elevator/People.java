@@ -5,7 +5,7 @@ public class People {
 
 	public People(int age) {
 		super();
-		this.age = age + 25;
+		this.age = age + 30;
 	}
 
 	@Override
